@@ -4,7 +4,7 @@
 /**
  * main - Entry point
  *
- * Description: Print the number stored in the variable n is positive or negative
+ * Description: Print the number n is positive or negative
  *
  * Return: Always 0 (Success)
  */
@@ -15,9 +15,9 @@ int main(void)
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 	if (n > 0)
-        {
-                printf("%d is positive\n", n);
-        }
+	{
+		printf("%d is positive\n", n);
+	}
 	else if (n == 0)
 	{
 		printf("%d is zero\n", n);
