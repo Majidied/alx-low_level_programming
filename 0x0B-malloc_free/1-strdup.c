@@ -10,7 +10,7 @@
 
 char *_strdup(char *str)
 {
-	unsigned int len = 0;
+	int len = 0, r;
 	char *duplicate;
 
 	if (str == NULL)
@@ -23,8 +23,8 @@ char *_strdup(char *str)
 
 	if (duplicate == NULL)
 		return (NULL);
-	while (len)
-		duplicate[len] = str[len];
+	for (r = 0; str[r]; r++)
+		duplicate[r] = str[r];
 	return (duplicate);
 }
 
