@@ -7,4 +7,7 @@ void free_grid(int **grid, int height);
 char *_strdup(char *str);
 char *argstostr(int ac, char **av);
 char **strtow(char *str);
+void util(char **, char *);
+void create_word(char **, char *, int, int, int);
+
 #endif
