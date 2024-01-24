@@ -1,0 +1,9 @@
+CC = gcc -Wall
+SRC = main.c school.c
+
+all: school
+
+school: m.h main.c school.c
+	$(CC) -Wall $(SRC) -o school
+clean:
+	rm -f school
