@@ -8,7 +8,7 @@ all: $(OBJ)
 	$(CC) $(CFLAGS) $(OBJ) -o $(NAME)
 
 clean: $(NAME)
-	$(RM) *~ */*~ core
+	$(RM) *~ */*~ core $(NAME)
 
 oclean: clean
 	$(RM) $(OBJ)
