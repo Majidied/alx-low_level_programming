@@ -1,0 +1,6 @@
+all: school
+
+school: m.h main.c school.c
+	gcc -Wall main.c school.c -o school
+clean:
+	rm -f schools
